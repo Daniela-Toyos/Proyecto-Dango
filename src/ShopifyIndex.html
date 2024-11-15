@@ -1,3 +1,4 @@
+<!-- Proyecto realizado por Daniela Toyos -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +22,7 @@
   <!-- Barra de navegación -->
   <header class="bg-green-200">
     <nav class="flex justify-between items-center h-12 bg-gray-50 px-4">
-      <!-- Menú de navegación centrado -->
+      <!-- Menú de navegación -->
       <ul class="flex space-x-4 text-lime-600 mx-auto">
         <li class="hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer"><a href="#">Home</a></li>
         <li class="hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer"><a href="#">Item 1</a></li>
@@ -31,7 +32,7 @@
         <li class="hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer"><a href="#">Item 5</a></li>
       </ul>
   
-      <!-- Icono de carrito en el borde derecho -->
+      <!-- Icono de carrito-->
       <button id="botonCarrito" class="text-lime-600 focus:outline-none hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer">
         <i class="fa-solid fa-bag-shopping fa-xl"></i>
       </button>
@@ -46,7 +47,6 @@
 
             <div class="swiper-slide">
                 <div class="flex items-center justify-between h-screen p-8">
-                    <!-- Contenedor de texto y botones -->
                     <div class="w-1/2 space-y-4 ml-48">
                         <h2 class="text-4xl font-bold text-lime-600">Sed finibus viverra purus id varius. Ut ut suscipit ipsum.</h2>
                         <p class="text-lime-600">Fusce sed libero nec risus congue viverra.</p>
@@ -56,7 +56,6 @@
                         </div>
                     </div>
                 
-                    <!-- Contenedor de imagen -->
                     <div class="w-1/2 flex justify-end mr-56">
                         <img src="img/hero2.jpg" alt="Imagen de ejemplo" class="rounded-lg object-cover max-w-full w-[300px] h-auto ml-8"/>
                     </div>
@@ -65,7 +64,6 @@
 
             <div class="swiper-slide">
                 <div class="flex items-center justify-between h-screen p-8">
-                    <!-- Contenedor de texto y botones -->
                     <div class="w-1/2 space-y-4 ml-48">
                         <h2 class="text-4xl font-bold text-lime-600">Suspendisse id gravida lorem.</h2>
                         <p class="text-lime-600">Aliquam interdum auctor nulla, a posuere libero feugiat egestas.</p>
@@ -75,7 +73,6 @@
                         </div>
                     </div>
                 
-                    <!-- Contenedor de imagen -->
                     <div class="w-1/2 flex justify-end mr-56">
                         <img src="img/imagenmain" alt="Imagen de ejemplo" class="rounded-lg object-cover max-w-full w-[300px] h-auto ml-8"/>
                     </div>
@@ -84,7 +81,6 @@
 
             <div class="swiper-slide">
                 <div class="flex items-center justify-between h-screen p-8">
-                    <!-- Contenedor de texto y botones -->
                     <div class="w-1/2 space-y-4 ml-48">
                         <h2 class="text-4xl font-bold text-lime-600">In hac habitasse platea dictumst. Ut aliquet tincidunt maximus.</h2>
                         <p class="text-lime-600">Donec rutrum sollicitudin velit vel fringilla.</p>
@@ -94,7 +90,6 @@
                         </div>
                     </div>
                 
-                    <!-- Contenedor de imagen -->
                     <div class="w-1/2 flex justify-end mr-56">
                         <img src="img/hero3.jpg" alt="Imagen de ejemplo" class="rounded-lg object-cover max-w-full w-[300px] h-auto ml-8"/>
                     </div>
@@ -118,7 +113,6 @@
   <section class="py-16 bg-gray-50">
     <h2 class="text-center text-3xl font-semibold text-lime-600 mb-8">Featured Collection</h2>
     
-    <!-- Contenedor de Swiper -->
     <div class="swiper-container featured-collection-carousel">
       <div class="swiper-wrapper">
         <!-- Slide 1 con 8 productos -->
@@ -126,57 +120,54 @@
           <!-- Fila superior de 4 productos -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6 mx-6">
             <!-- Tarjetas de producto para la fila superior -->
-            <!-- Agrega aquí 4 tarjetas de producto -->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen1" alt="Producto 1" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$176.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 1" data-precio="176.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
-            <!-- Resto de las tarjetas de producto -->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen3" alt="Producto 2" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$126.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 2" data-precio="126.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen2" alt="Producto 3" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$136.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 3" data-precio="136.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen4" alt="Producto 4" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$146.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 4" data-precio="146.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
           </div>
   
           <!-- Fila inferior de 4 productos -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-6">
-            <!-- Agrega aquí otras 4 tarjetas de producto -->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen5" alt="Producto 5" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$156.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 5" data-precio="156.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen6" alt="Producto 6" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 6" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen7" alt="Producto 7" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$176.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 7" data-precio="176.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen8" alt="Producto 8" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 8" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
           </div>
         </div>
@@ -189,50 +180,48 @@
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/img1" alt="Producto 9" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 9" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/pic1" alt="Producto 10" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$176.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 10" data-precio="176.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/img2" alt="Producto 11" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$136.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 11" data-precio="136.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/pic2" alt="Producto 12" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$156.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 12" data-precio="156.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
           </div>
   
           <!-- Fila inferior de 3 productos -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-6">
-            <!-- Tarjetas de producto para la fila inferior (3 productos) -->
+            <!-- Tarjetas de producto para la fila inferior-->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center h-full">
               <img src="img/img4" alt="Producto 13" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$126.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 13" data-precio="126.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/img3.webp" alt="Producto 14" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 14" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/pic3" alt="Producto 15" class="w-full object-contain rounded-lg mb-4">
               <p class="text-lg font-semibold mb-2">$146.98</p>
-              <button class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition">BUY NOW</button>
+              <button data-nombre="Producto 15" data-precio="146.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
-
-            <div class="p-4 h-full"></div>
 
           </div>
         </div>
@@ -258,6 +247,16 @@
       </div>
     </div>
   </section>
+
+      <!-- Modal del carrito -->
+    <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50" id="modalCarrito">
+      <div class="bg-white p-6 rounded-lg max-w-sm w-full relative">
+        <button class="absolute top-2 right-2 text-2xl text-gray-500 hover:text-gray-700" id="botonCerrarModal">&times;</button>
+        <h2 class="text-2xl font-semibold mb-4">Carrito de Compras</h2>
+        <ul id="itemsCarrito" class="mb-4 space-y-2"></ul>
+        <p class="text-lg font-semibold">Total: $<span id="precioTotal">0</span></p>
+      </div>
+  </div>
   
   
 
