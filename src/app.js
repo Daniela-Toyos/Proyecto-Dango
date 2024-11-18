@@ -2,8 +2,8 @@ window.addEventListener('load', () => {
     const heroSwiper = new Swiper('.hero-carousel', {
       loop: true,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.hero-next',
+        prevEl: '.hero-prev',
       },
       autoplay: {
         delay: 7000,

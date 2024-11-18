@@ -8,12 +8,12 @@
   <link href="./dist/output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="app.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+  <script src="app.js" defer></script>
   <script src="https://kit.fontawesome.com/a2323f6854.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-gray-100">
-  <div class="flex justify-center items-center h-12 bg-lime-600 text-white">
+  <div class="flex justify-center items-center h-12 bg-lime-600 text-white text-sm sm:text-base">
     <span>30% OFF ALL ORDERS UNTIL 4/27</span>
     <div class="flex space-x-4"></div>
   </div>
@@ -23,7 +23,7 @@
   <header class="bg-green-200">
     <nav class="flex justify-between items-center h-12 bg-gray-50 px-4">
       <!-- Menú de navegación -->
-      <ul class="flex space-x-4 text-lime-600 mx-auto">
+      <ul class="flex space-x-2 sm:space-x-4 text-lime-600 mx-auto text-xs sm:text-sm">
         <li class="hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer"><a href="#">Home</a></li>
         <li class="hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer"><a href="#">Item 1</a></li>
         <li class="hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer"><a href="#">Item 2</a></li>
@@ -34,113 +34,122 @@
   
       <!-- Icono de carrito-->
       <button id="botonCarrito" class="text-lime-600 focus:outline-none hover:border-b-2 hover:border-lime-600 pb-1 cursor-pointer">
-        <i class="fa-solid fa-bag-shopping fa-xl"></i>
+        <i class="fa-solid fa-bag-shopping fa-lg sm:fa-xl"></i>
       </button>
     </nav>
   </header>
   
 
-  <div class="relative h-screen bg-cover bg-center" style="background-image: url('img/nubes.jpg');">
-    <div class="swiper-container realtive hero-carousel">
+  <div class="relative h-[70vh] sm:h-screen  bg-cover bg-center" style="background-image: url('img/nubes.jpg');">
+    <div class="swiper-container hero-carousel relative ">
 
         <div class="swiper-wrapper">
 
-            <div class="swiper-slide">
+            <div class="swiper-slide flex flex-wrap items-center justify-between h-full px-4 sm:px-8">
                 <div class="flex items-center justify-between h-screen p-8">
-                    <div class="w-1/2 space-y-4 ml-48">
-                        <h2 class="text-4xl font-bold text-lime-600">Sed finibus viverra purus id varius. Ut ut suscipit ipsum.</h2>
-                        <p class="text-lime-600">Fusce sed libero nec risus congue viverra.</p>
-                        <div class="space-x-4">
-                            <button class="bg-lime-600 text-white py-2 px-4 rounded-md hover:bg-green-600 transition">SHOP NOW<i class="fa-solid fa-chevron-right ml-4"></i></button>
-                            <button class="border border-lime-600 text-lime-600 px-6 py-2 rounded-md hover:bg-lime-500 hover:text-white transition">TAKE THE QUIZ<i class="fa-solid fa-chevron-right ml-4"></i></button>
+                    <div class="w-full sm:w-1/2 space-y-4">
+                        <h2 class="text-xl sm:text-4xl font-bold text-lime-600">Sed finibus viverra purus id varius. Ut ut suscipit ipsum.</h2>
+                        <p class="text-lime-600 text-sm sm:text-base">Fusce sed libero nec risus congue viverra.</p>
+                        <div class="space-x-2 sm:space-x-4">
+                            <button class="bg-lime-600 text-white py-2 px-4 rounded-md hover:bg-green-600 transition text-sm sm:text-base">SHOP NOW<i class="fa-solid fa-chevron-right ml-2 sm:ml-4"></i></button>
+                            <button class="border border-lime-600 text-lime-600 px-6 py-2 rounded-md hover:bg-lime-500 hover:text-white transition text-sm sm:text-base">TAKE THE QUIZ<i class="fa-solid fa-chevron-right ml-2 sm:ml-4"></i></button>
                         </div>
                     </div>
                 
-                    <div class="w-1/2 flex justify-end mr-56">
+                    <div class="w-full sm:w-1/2 flex justify-center">
                         <img src="img/hero2.jpg" alt="Imagen de ejemplo" class="rounded-lg object-cover max-w-full w-[300px] h-auto ml-8"/>
                     </div>
                 </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide flex flex-wrap items-center justify-between h-full px-4 sm:px-8">
                 <div class="flex items-center justify-between h-screen p-8">
-                    <div class="w-1/2 space-y-4 ml-48">
-                        <h2 class="text-4xl font-bold text-lime-600">Suspendisse id gravida lorem.</h2>
-                        <p class="text-lime-600">Aliquam interdum auctor nulla, a posuere libero feugiat egestas.</p>
-                        <div class="space-x-4">
-                            <button class="bg-lime-600 text-white py-2 px-4 rounded-md hover:bg-green-600 transition">SHOP NOW<i class="fa-solid fa-chevron-right ml-4"></i></button>
-                            <button class="border border-lime-600 text-lime-600 px-6 py-2 rounded-md hover:bg-lime-500 hover:text-white transition">TAKE THE QUIZ<i class="fa-solid fa-chevron-right ml-4"></i></button>
+                    <div class="w-full sm:w-1/2 space-y-4">
+                        <h2 class="text-xl sm:text-4xl font-bold text-lime-600">Suspendisse id gravida lorem.</h2>
+                        <p class="text-lime-600 text-sm sm:text-base">Aliquam interdum auctor nulla, a posuere libero feugiat egestas.</p>
+                        <div class="space-x-2 sm:space-x-4">
+                            <button class="bg-lime-600 text-white py-2 px-4 rounded-md hover:bg-green-600 transition text-sm sm:text-base">SHOP NOW<i class="fa-solid fa-chevron-right ml-2 sm:ml-4"></i></button>
+                            <button class="border border-lime-600 text-lime-600 px-6 py-2 rounded-md hover:bg-lime-500 hover:text-white transition text-sm sm:text-base">TAKE THE QUIZ<i class="fa-solid fa-chevron-right ml-2 sm:ml-4"></i></button>
                         </div>
                     </div>
                 
-                    <div class="w-1/2 flex justify-end mr-56">
+                    <div class="w-full sm:w-1/2 flex justify-center">
                         <img src="img/imagenmain" alt="Imagen de ejemplo" class="rounded-lg object-cover max-w-full w-[300px] h-auto ml-8"/>
                     </div>
                 </div>
             </div>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide flex flex-wrap items-center justify-between h-full px-4 sm:px-8">
                 <div class="flex items-center justify-between h-screen p-8">
-                    <div class="w-1/2 space-y-4 ml-48">
-                        <h2 class="text-4xl font-bold text-lime-600">In hac habitasse platea dictumst. Ut aliquet tincidunt maximus.</h2>
-                        <p class="text-lime-600">Donec rutrum sollicitudin velit vel fringilla.</p>
-                        <div class="space-x-4">
-                            <button class="bg-lime-600 text-white py-2 px-4 rounded-md hover:bg-green-600 transition">SHOP NOW<i class="fa-solid fa-chevron-right ml-4"></i></button>
-                            <button class="border border-lime-600 text-lime-600 px-6 py-2 rounded-md hover:bg-lime-500 hover:text-white transition">TAKE THE QUIZ<i class="fa-solid fa-chevron-right ml-4"></i></button>
+                    <div class="w-full sm:w-1/2 space-y-4">
+                        <h2 class="text-xl sm:text-4xl font-bold text-lime-600">In hac habitasse platea dictumst. Ut aliquet tincidunt maximus.</h2>
+                        <p class="text-lime-600 text-sm sm:text-base">Donec rutrum sollicitudin velit vel fringilla.</p>
+                        <div class="space-x-2 sm:space-x-4">
+                            <button class="bg-lime-600 text-white py-2 px-4 rounded-md hover:bg-green-600 transition text-sm sm:text-base">SHOP NOW<i class="fa-solid fa-chevron-right ml-2 sm:ml-4"></i></button>
+                            <button class="border border-lime-600 text-lime-600 px-6 py-2 rounded-md hover:bg-lime-500 hover:text-white transition text-sm sm:text-base">TAKE THE QUIZ<i class="fa-solid fa-chevron-right ml-2 sm:ml-4"></i></button>
                         </div>
                     </div>
                 
-                    <div class="w-1/2 flex justify-end mr-56">
+                    <div class="w-full sm:w-1/2 flex justify-center">
                         <img src="img/hero3.jpg" alt="Imagen de ejemplo" class="rounded-lg object-cover max-w-full w-[300px] h-auto ml-8"/>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="flex justify-center">
-          <div class="swiper-button-prev">
-            <button class="text-lime-600 hover:text-green-500"></button>
-          </div>
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-4">
+          <!-- Flecha izquierda -->
+          <button 
+            class="hero-prev flex items-center justify-center w-10 h-10 border-2 border-lime-600 text-lime-600 rounded-full hover:bg-lime-600 hover:text-green-500 transition duration-300 z-30 pointer-events-auto opacity-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
     
-          <div class="swiper-button-next">
-            <button class="text-lime-600 hover:text-green-500"></button>
-          </div>
+          <!-- Flecha derecha -->
+          <button 
+            class="hero-next flex items-center justify-center w-10 h-10 border-2 border-lime-600 text-lime-600 rounded-full hover:bg-lime-600 hover:text-green-500 transition duration-300 z-30 pointer-events-auto opacity-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
+        
         
     </div>
   </div>
 
-  <section class="py-16 bg-gray-50">
-    <h2 class="text-center text-3xl font-semibold text-lime-600 mb-8">Featured Collection</h2>
+  <section class="py-8 sm:py-16 bg-gray-50">
+    <h2 class="text-center text-2xl sm:text-3xl font-semibold text-lime-600 mb-4 sm:mb-8">Featured Collection</h2>
     
     <div class="swiper-container featured-collection-carousel">
       <div class="swiper-wrapper">
         <!-- Slide 1 con 8 productos -->
-        <div class="swiper-slide grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="swiper-slide grid grid-cols-2 sm:grid-cols-4 gap-4 px-4">
           <!-- Fila superior de 4 productos -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6 mx-6">
             <!-- Tarjetas de producto para la fila superior -->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen1" alt="Producto 1" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$176.98</p>
-              <button data-nombre="Producto 1" data-precio="176.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$176.98</p>
+              <button data-nombre="Producto 1" data-precio="176.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen3" alt="Producto 2" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$126.98</p>
-              <button data-nombre="Producto 2" data-precio="126.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$126.98</p>
+              <button data-nombre="Producto 2" data-precio="126.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen2" alt="Producto 3" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$136.98</p>
-              <button data-nombre="Producto 3" data-precio="136.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$136.98</p>
+              <button data-nombre="Producto 3" data-precio="136.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen4" alt="Producto 4" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$146.98</p>
-              <button data-nombre="Producto 4" data-precio="146.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$146.98</p>
+              <button data-nombre="Producto 4" data-precio="146.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
           </div>
   
@@ -148,57 +157,57 @@
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-6">
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen5" alt="Producto 5" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$156.98</p>
-              <button data-nombre="Producto 5" data-precio="156.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$156.98</p>
+              <button data-nombre="Producto 5" data-precio="156.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen6" alt="Producto 6" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button data-nombre="Producto 6" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$166.98</p>
+              <button data-nombre="Producto 6" data-precio="166.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen7" alt="Producto 7" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$176.98</p>
-              <button data-nombre="Producto 7" data-precio="176.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$176.98</p>
+              <button data-nombre="Producto 7" data-precio="176.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/imagen8" alt="Producto 8" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button data-nombre="Producto 8" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$166.98</p>
+              <button data-nombre="Producto 8" data-precio="166.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
           </div>
         </div>
         
         <!-- Slide 2 con 7 productos -->
-        <div class="swiper-slide grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="swiper-slide grid grid-cols-2 sm:grid-cols-4 gap-4 px-4">
           <!-- Fila superior de 4 productos -->
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-6 mx-6">
             <!-- Tarjetas de producto para la fila superior -->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/img1" alt="Producto 9" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button data-nombre="Producto 9" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$166.98</p>
+              <button data-nombre="Producto 9" data-precio="166.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/pic1" alt="Producto 10" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$176.98</p>
-              <button data-nombre="Producto 10" data-precio="176.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$176.98</p>
+              <button data-nombre="Producto 10" data-precio="176.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/img2" alt="Producto 11" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$136.98</p>
-              <button data-nombre="Producto 11" data-precio="136.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$136.98</p>
+              <button data-nombre="Producto 11" data-precio="136.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/pic2" alt="Producto 12" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$156.98</p>
-              <button data-nombre="Producto 12" data-precio="156.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$156.98</p>
+              <button data-nombre="Producto 12" data-precio="156.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
           </div>
   
@@ -207,20 +216,20 @@
             <!-- Tarjetas de producto para la fila inferior-->
             <div class="bg-white rounded-lg shadow-lg p-4 text-center h-full">
               <img src="img/img4" alt="Producto 13" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$126.98</p>
-              <button data-nombre="Producto 13" data-precio="126.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$126.98</p>
+              <button data-nombre="Producto 13" data-precio="126.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/img3.webp" alt="Producto 14" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$166.98</p>
-              <button data-nombre="Producto 14" data-precio="166.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$166.98</p>
+              <button data-nombre="Producto 14" data-precio="166.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
             <div class="bg-white rounded-lg shadow-lg p-4 text-center">
               <img src="img/pic3" alt="Producto 15" class="w-full object-contain rounded-lg mb-4">
-              <p class="text-lg font-semibold mb-2">$146.98</p>
-              <button data-nombre="Producto 15" data-precio="146.98" class="bg-lime-600 text-white py-2 px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
+              <p class="text-sm sm:text-lg font-semibold mb-2">$146.98</p>
+              <button data-nombre="Producto 15" data-precio="146.98" class="bg-lime-600 text-white py-1 px-3 sm:py-2 sm:px-4 rounded-full hover:bg-green-600 transition agregarProducto">BUY NOW</button>
             </div>
 
           </div>
