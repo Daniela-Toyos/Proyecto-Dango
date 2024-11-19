@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
       const featuredCollectionSwiper = new Swiper('.featured-collection-carousel', {
       loop: true,
       slidesPerView: 1, // Cantidad de slides visibles
-      spaceBetween: 20, // Espacio entre slides
+      spaceBetween: 10, // Espacio entre slides
       navigation: {
         nextEl: '.featured-next',
         prevEl: '.featured-prev',
